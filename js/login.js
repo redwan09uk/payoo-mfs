@@ -41,13 +41,14 @@ document.getElementById('buttton-login').addEventListener('click',function(event
 
    //bad way to validate, it is only for use temporary
 
-   if(phoneNumber === '5' && pinNumber=== '1234'){
-    console.log('you are logged in');
-    window.location.href= '/h';//it is not working need to fix
-   } else {
+   if(phoneNumber === '5' && pinNumber === '1234'){
+    console.log('you are logged in');   
+   // window.location.href = '/home' //it it is not working , could not manage to connect
+   }
+   else {
     alert('wrong pin or phone number')
    }
 
    });
 
-  
+   
