@@ -24,12 +24,12 @@
                   <div class="divider"></div> <!-- it makes a horizontal line it taken from daisyUI "divider" -->
                   <div>
                     <!-- user action button -->
-                    <button class="btn btn-lg">Add Money</button> <!--it is taken from daisyUI 'button' 'large'-->
-                    <button class="btn btn-lg">Cash Out</button> <!--it is taken from daisyUI 'button' 'large'-->
+                    <button id="btn-display-add-money" class="btn btn-lg">Add Money</button> <!--it is taken from daisyUI 'button' 'large'-->
+                    <button id="btn-display-cash-out" class="btn btn-lg">Cash Out</button> <!--it is taken from daisyUI 'button' 'large'-->
                   </div>
                   <div class="divider"></div> <!--it makes a horizontal line it taken from DaisyUI 'divider'-->
                   <!-- add money form start --> <!--Keep hidden this add money for now with tailwind css 'hidden'-->
-                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -52,7 +52,7 @@
                   <!-- add money form end -->
 
                   <!-- Cash out form start -->
-                  <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <div id ="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -82,5 +82,6 @@
   <!-- javaScript Added -->
   <script src="js/home.js"></script>
   <script src="./js/cashOut.js"></script>
+  <script src="./js/feature.js"></script>
 </body>
 </html>
