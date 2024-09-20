@@ -25,6 +25,7 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
 
     if(pinNumberInput === '1234') {
         console.log('added money to your account')
+        
     } else{
         alert('wrong pin ,please try agin')
     }
@@ -38,7 +39,11 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
      const balanceNumber = parseFloat(balance);  //with this we change string to number we can check it is string or number through the "typeof"
      
      const newBalance =addMoneyNumber + balanceNumber;
-     console.log(newBalance);
+
+     // //update the ui
+    document.getElementById('account-balance').innerText = newBalance; //it is to see the changes of result on total balance
+
+
 
     
     
