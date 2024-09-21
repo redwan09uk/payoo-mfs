@@ -44,7 +44,17 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
     document.getElementById('account-balance').innerText = newBalance; //it is to see the changes of result on total balance
 
 
+    // common shared functions here which linked with utilities.js
+    // on utilities  I have declare one template to get an id and here i am calling with the specific id with the name.
+    //sample from shared file(utilities)
+    // const addMoney = getInputFieldValueById();
+    // console.log('add money value', addMoney);
 
+    const addMoneys = getInputFieldValueById('input-add-money');
+    const pinNumbers = getInputFieldValueById('input-pin-number');
+    console.log('add money with parameter', addMoneys,pinNumbers);
+   
+ 
     
     
 })
